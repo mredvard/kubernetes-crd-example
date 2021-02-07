@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	client_v1alpha1 "github.com/mredvard/kubernetes-crd-example/clientset/v1alpha1"
 	"github.com/mredvard/kubernetes-crd-example/api/types/v1alpha1"
+	clientv1alpha1 "github.com/mredvard/kubernetes-crd-example/clientset/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
@@ -12,7 +12,7 @@ import (
 	"k8s.io/client-go/tools/cache"
 )
 
-func WatchResources(clientSet client_v1alpha1.ExampleV1Alpha1Interface) cache.Store {
+func WatchResources(clientSet clientv1alpha1.ExampleV1Alpha1Interface) cache.Store {
 	projectStore, projectController := cache.NewInformer(
 		&cache.ListWatch{
 			ListFunc: func(lo metav1.ListOptions) (result runtime.Object, err error) {
