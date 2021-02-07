@@ -1,9 +1,8 @@
 package v1alpha1
 
 import (
-	"github.com/martin-helmich/kubernetes-crd-example/api/types/v1alpha1"
+	"github.com/mredvard/kubernetes-crd-example/api/types/v1alpha1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
 )

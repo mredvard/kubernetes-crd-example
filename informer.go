@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/martin-helmich/kubernetes-crd-example/api/types/v1alpha1"
-	client_v1alpha1 "github.com/martin-helmich/kubernetes-crd-example/clientset/v1alpha1"
+	client_v1alpha1 "github.com/mrdevard/kubernetes-crd-example/clientset/v1alpha1"
+	"github.com/mredvard/kubernetes-crd-example/api/types/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
