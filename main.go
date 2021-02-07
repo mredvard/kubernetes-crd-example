@@ -6,8 +6,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/martin-helmich/kubernetes-crd-example/api/types/v1alpha1"
-	clientV1alpha1 "github.com/martin-helmich/kubernetes-crd-example/clientset/v1alpha1"
+	"github.com/mredvard/kubernetes-crd-example/api/types/v1alpha1"
+	clientV1alpha1 "github.com/mredvard/kubernetes-crd-example/clientset/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"

@@ -1,4 +1,4 @@
-module github.com/martin-helmich/kubernetes-crd-example
+module github.com/mredvard/kubernetes-crd-example
 
 go 1.13
 
